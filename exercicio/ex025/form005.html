@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        fieldset {
+            margin-bottom:  5px;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on"></form>
     <fieldset>
-        <legend>Esportes favoritos</legend>
-        <input type="checkbox" name="esbas" id="iesbas">Basquete <br>
-        <input type="checkbox" name="esfut" id="iesfut">Futebol <br> 
-        <input type="checkbox" name="esnat" id="iesnat">Natação <br>
-        <input type="checkbox" name="esten" id="iesten">Tênis <br>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="isexo" value="M"> <label for="isexo">Masculino</label><br>
+        <input type="radio" name="sexo" id="isexo" value="F"><label for="isexo">Feminino</label><br>
     </fieldset>
+    <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+        <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol </label><br> 
+        <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação </label><br>
+        <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label> <br>
+    </fieldset>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
 </body>
 </html>
